@@ -1,0 +1,392 @@
+.card:hover {
+  border: 5px solid #00f4f4;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  color: coral;
+}
+
+.form-label {
+  color: black;
+  font-size: 16px;
+}
+
+.button {
+  background-color: rgb(22, 20, 20);
+  color: #fff;
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  font-size: 14px;
+}
+
+body {
+
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  text-align: center;
+
+}
+
+h3 {
+  font-size: x-large;
+}
+
+h4 {
+  font-size: large;
+}
+
+.box {
+  background-color: lightblue;
+  border: 1px solid blue;
+  min-height: 50px;
+  font-size: 2rem;
+
+}
+
+#nav-bar {
+  background-color: #eaf6f6;
+  text-decoration-color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  height: 40px;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.links-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+#app-logo {
+  width: 38px;
+  height: 38px;
+}
+
+
+#search {
+  width: 350px;
+  background-color: rgb(250, 249, 246);
+  color: black;
+  border-radius: 10px;
+  border: none;
+  padding: 6px 20px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#log-out {
+  background-color: black;
+  color: rgb(250, 249, 246);
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.search-group {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  gap: 20px;
+}
+
+#login {
+  background-color: #eaf6f6;
+    width: 100%;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+#login-header {
+ padding-top: 85px;
+}
+
+#login-form {
+  justify-content: center;
+  border: 50px;
+}
+
+.login-input-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border: none;
+  font-size: 14px;
+}
+
+.username-input {
+  background-color: rgb(250, 249, 246);
+  color: black;
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.password-input {
+  background-color: rgb(250, 249, 246);
+  color: black;
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  font-size: 16px;
+  width: 200px;
+}
+
+.login-btn-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding-top: 15px;
+  justify-content: center;
+}
+
+.login-btn {
+  background-color: rgb(22, 20, 20);
+  color: #fff;
+  border-radius: 16px;
+  border: none;
+  padding: 6px 18px;
+  font-size: 14px;
+}
+
+#create-profile-div {
+  background-color: #eaf6f6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 200px;
+  gap: 20px;
+}
+
+.create-profile-container {
+  display: flex;
+  height: 100%;
+  
+}
+
+.create-profile-form {
+  color: #fff;
+  border: none;
+  padding: 6px 16px;
+  font-size: 14px;
+  width: 600px;
+  gap: 20px;
+  
+}
+
+#Home {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  background-color: #eaf6f6;
+  justify-content: center;
+}
+
+#home {
+  display: flex;
+  flex-direction: row;
+  margin: 25px;
+}
+
+.map-container {
+  height: 62vh;
+  width: 52vw;
+  border: none;
+  border-radius: 30px;
+  margin-top: 149px;
+}
+
+#event-container {
+  height: 1175px;
+  width: 40vw;
+  margin-top: 100px;
+  background-color: #eaf6f6;
+  color: black;
+  border-radius: 16px;
+  border: none;
+  padding: 6px 16px;
+  font-size: 16px;
+}
+
+.block-header {
+  font-size: 28px;
+  padding-right: 220px;
+}
+
+.event-wrap {
+  height: 45rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#event-card {
+  background-color: rgb(250, 249, 246);
+  border-radius: 30px;
+  font-size: 20px;
+  width: 500px;
+  /* height: 250px; */
+}
+
+#event-card-body {
+  padding: 10px;
+} 
+
+#event-container-btn {
+  border-radius: 30px;
+  margin-top: 5px;
+}
+
+#location-container {
+  height: 72vh;
+  width: 45vw;
+  margin-top: 25px;
+  color: black;
+  border-radius: 30px;
+  border: none;
+  padding: 6px 16px;
+  font-size: 16px;
+}
+
+#location-card {
+  background-color: rgb(250, 249, 246);
+  border-radius: 12px;
+}
+
+#location-card-img {
+  border-radius: 12px;
+  height: 40vh;
+}
+
+#my-activities {
+  display: flex;
+  flex-direction: row;
+  background-color: #eaf6f6;
+}
+
+#my-activities-container {
+  height: 70vh;
+  width: 450px;
+  display: flex;
+}
+
+.my-activities-header {
+  font-size: 26px;
+}
+
+#my-activities-list {
+  margin-top: 100px;
+  width: 500px;
+}
+
+#activity-card {
+  border-radius: 30px;
+}
+
+#meet {
+  background-color: rgb(250, 249, 246);
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+#meet-page-container {
+  display: flex;
+}
+
+#meet-container {
+  margin-top: 75px;
+  height: 800px;
+  width: 32vw;
+}
+
+#users-near-wrap {
+  overflow-y: scroll;
+}
+
+#meet-card {
+  border-radius: 20px;
+  background-color: #eaf6f6;
+}
+
+#friends-list {
+  margin-top: 75px;
+  height: 500px;
+  width: 30vw;
+}
+
+#friend-card {
+  border-radius: 30px;
+  height: 125px;
+}
+
+#unfriend-btn{
+  margin-top: 5px;
+  background-color: limegreen;
+}
+#message-btn{
+  margin-top: 5px;
+  background-color: limegreen;
+}
+
+
+img {
+  height: 250px;
+  width: 190px;
+}
+
+
+#host-event-container {
+  height: 60vh;
+  width: 50vw;
+  margin-top: 50px;
+}
+
+#host-event-form {
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+#address-input {
+  width: 375px;
+}
+
+
+.card-text {
+  margin: 0;
+}
+
+input:focus {
+  background-color: rgb(255, 255, 76);
+  outline: none;
+  border: 1px solid rgb(0, 0, 0)
+}
