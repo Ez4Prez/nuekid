@@ -107,6 +107,7 @@ function MyActivities ({activities, setActivities, renderEventDateDay}){
         <div class="container" id="my-activities-container">
             <div class="container" id="my-activities-list">
             <h3 className="my-activities-header">My activities...</h3>
+                <div className="activity-wrap">
                 {activities.map(activity => (
                 <div class="card" key={activity.id} id="activity-card">
                     <div class="card-body">
@@ -120,6 +121,7 @@ function MyActivities ({activities, setActivities, renderEventDateDay}){
                     </div>
                 </div>
                 ))}
+                </div>
 
             </div>
 

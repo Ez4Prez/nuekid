@@ -55,12 +55,148 @@ with app.app_context():
     ))
     locations.append(Location(
         name='Prospect Park',
-        address='Prospect Heights, Brooklyn, New York, NY 11215',
+        address='Prospect Heights, Brooklyn, NY 11215',
         lat="40.661041",
         long="-73.968445",
-        img="https://blankslatepages.s3.amazonaws.com/559181aa758e5-4604015369_72bb574129_b.jpg",
+        img="https://theagencyre.com/blog/wp-content/uploads/2021/09/shutterstock_1558169030.jpg",
         location_type="Bicycle"
     ))
+    locations.append(Location(
+        name='Canarsie Park',
+        address='Seaview Ave & Remsen Ave, Brooklyn, NY 11236',
+        lat="40.633756678705694",
+        long="-73.8938727197795",
+        img="https://www.nycgovparks.org/photo_gallery/full_size/23751.jpg",
+        location_type="Bicycle"
+    ))
+    locations.append(Location(
+        name='Brooklyn Bridge Park',
+        address='334 Furman St, Brooklyn, NY 11201',
+        lat="40.70287661973249",
+        long="-73.99579221481221",
+        img="https://theagencyre.com/blog/wp-content/uploads/2021/09/Brookklyn-bridge-park.jpg",
+        location_type="Bicycle"
+    ))
+    locations.append(Location(
+        name='Adams Street Library',
+        address='9 Adams St, Brooklyn, NY 11201',
+        lat="40.704341417064455",
+        long="-73.98826757260288",
+        img="https://www.vmcdn.ca/f/files/bkreader/import/2021_10_Adams-Street-Take-2-interior-Childrens-area-1-scaled.jpg",
+        location_type="Books"
+    ))
+    locations.append(Location(
+        name='Park Slope Library',
+        address='431 6th Ave, Brooklyn, NY 11215',
+        lat="40.66938322477015",
+        long="-73.98377452336914",
+        img="https://www.bklynlibrary.org/sites/default/files/styles/eventcal_large_split/public/images/page/RESIZE_pic_0018_2.jpg",
+        location_type="Books"
+    ))
+    locations.append(Location(
+        name='Washington Park',
+        address='4th St. &, 5th Ave, Brooklyn, NY 11215',
+        lat="40.67620873496912",
+        long="-73.9854892706327",
+        img="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/1-outdoor-chess-boards-washington-square-park-new-york-city-usa-joe-fox.jpg",
+        location_type="Chess"
+    ))
+    locations.append(Location(
+        name='Brooklyn Museum',
+        address='200 Eastern Pkwy, Brooklyn, NY 11238',
+        lat="40.672761568523526",
+        long="-73.96345828598297",
+        img="https://upload.wikimedia.org/wikipedia/commons/3/3a/Brooklyn_Museum_-_Entrance_%2852302265063%29.jpg",
+        location_type="Chess"
+    ))
+    locations.append(Location(
+        name='The Brooklyn Strategist',
+        address='333 Court St, Brooklyn, NY 11231',
+        lat="40.68567889748258",
+        long="-73.99540488252826",
+        img="https://s3-media0.fl.yelpcdn.com/bphoto/lpaqWfMxpLeQV_AIsHG9lw/348s.jpg",
+        location_type="Chess"
+    ))
+
+    locations.append(Location(
+        name='Next Level',
+        address='874 4th Ave, Brooklyn, NY 11232',
+        lat="40.66007618299216",
+        long="-74.00103169302449",
+        img="https://s3-media0.fl.yelpcdn.com/bphoto/lkWRI6nB0VU8ViAyYPDWQw/348s.jpg",
+        location_type="Game"
+    ))
+    locations.append(Location(
+        name='Alamo Drafthouse',
+        address='445 Albee Square W 4th floor, Brooklyn, NY 11201',
+        lat="40.69398791247702",
+        long="-73.98314911526691",
+        img="https://www.indiewire.com/wp-content/uploads/2016/10/img_6141.jpg",
+        location_type="Game"
+    ))
+    locations.append(Location(
+        name='RMG Theatre',
+        address='Canarsie Rd, Brooklyn, NY 11236',
+        lat="40.6358446654474",
+        long="-73.89154523184594",
+        img="https://www.rmgtheater.com/wp/wp-content/gallery/rmg-gallery2/12301709_458571074343469_678466979919537916_n.jpg",
+        location_type="Game"
+    ))
+    locations.append(Location(
+        name='Home',
+        address='1444 Flatbush Ave, Brooklyn, NY 11210',
+        lat="40.63558295842797",
+        long="-73.95077298074986",
+        img="images/home1.png",
+        location_type="Home1"
+    ))
+    locations.append(Location(
+        name="Jomo's Spot",
+        address='1446 Flatbush Ave, Brooklyn, NY 11210',
+        lat="40.642543873740884",
+        long="-73.95184584323957",
+        img="images/home2.png",
+        location_type="Home2"
+    ))
+    locations.append(Location(
+        name="Joe's Spot",
+        address='22 Troy Ave, Brooklyn, NY 11213',
+        lat="40.67162937035576",
+        long="-73.93608619608038",
+        img="images/home2.png",
+        location_type="Home2"
+    ))
+    locations.append(Location(
+        name="Alicia's Spot",
+        address='930 Prospect Pl, Brooklyn, NY 11213',
+        lat="40.67402775008218",
+        long="-73.94582341731473",
+        img="images/home2.png",
+        location_type="Home2"
+    ))
+    locations.append(Location(
+        name="Sunset Park",
+        address='7th Avenue &, 43rd St, Brooklyn, NY 11232',
+        lat="40.65287131606477",
+        long="-74.00382042189905",
+        img="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/56/a4/fe/the-city-at-sunset-park.jpg?w=1200&h=-1&s=1",
+        location_type="Basketball"
+    ))
+    locations.append(Location(
+        name="Dome Playground",
+        address='38th Street & 37th Street, Brooklyn, NY 11218',
+        lat="40.641749494983046",
+        long="-73.9800611660314",
+        img="https://www.nycgovparks.org/photo_gallery/full_size/18800.jpg",
+        location_type="Basketball"
+    ))
+    
+
+
+
+
+
+    
 
 
 
@@ -93,6 +229,15 @@ with app.app_context():
         people_needed= 20,
         space_available= 11,
         location_id=5,
+        date_id=2
+    ))
+    events.append(Event(
+        title="Competitive Soccer",
+        description="Got what it takes? bring your A game",
+        event_type="Soccer",
+        people_needed= 12,
+        space_available= 3,
+        location_id=3,
         date_id=2
     ))
     events.append(Event(
@@ -147,12 +292,76 @@ with app.app_context():
     hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
 
     users.append(User(
-        username="JimVsJomo",
+        username="JimBrown",
         password_hash=hashed_password,
         first_name="Jomo",
-        last_name="Leslie",
+        last_name="L",
         address="930 Prospect Pl, Brooklyn, NY 11213",
-        age= 34
+        age= 41
+    ))
+    users.append(User(
+        username="DaBroes",
+        password_hash="cats123",
+        first_name="Joe",
+        last_name="Dabo",
+        address="229 Troy Ave, Brooklyn, NY 11213",
+        age= 35
+    ))
+    users.append(User(
+        username="CatDaddy112",
+        password_hash="cats123",
+        first_name="Will",
+        last_name="Spears",
+        address="224 Kent Ave, Brooklyn, NY 11214",
+        age= 55
+    ))
+    users.append(User(
+        username="Dave-n-co",
+        password_hash="cats123",
+        first_name="David",
+        last_name="Chen",
+        address="33 Cat Walk Ave, Brooklyn, NY 11219",
+        age= 25
+    ))
+    users.append(User(
+        username="Aaronz",
+        password_hash="cats123",
+        first_name="Aaron",
+        last_name="Z",
+        address="14 Ocean Ave, Brooklyn, NY 11209",
+        age= 27
+    ))
+    users.append(User(
+        username="MsLarose",
+        password_hash="cats123",
+        first_name="Shannun",
+        last_name="L",
+        address="303 Church Ave, Brooklyn, NY 11211",
+        age= 26
+    ))
+    users.append(User(
+        username="Pac-man1991",
+        password_hash="cats123",
+        first_name="Rando",
+        last_name="Dave",
+        address="315 Keller St, Brooklyn, NY 11208",
+        age= 31
+    ))
+    users.append(User(
+        username="LastGuy118",
+        password_hash="cats123",
+        first_name="Steve",
+        last_name="Last",
+        address="44 Sunshine St, Brooklyn, NY 11210",
+        age= 44
+    ))
+    users.append(User(
+        username="sykee",
+        password_hash="cats123",
+        first_name="Wanda",
+        last_name="Sykes",
+        address="18 Dekaulb Ave, Brooklyn, NY 11216",
+        age= 42
     ))
 
 
@@ -164,11 +373,47 @@ with app.app_context():
     ))
     dates.append(Date(
         time="7:00 AM",
+        day="2023,6,23"
+    ))
+    dates.append(Date(
+        time="7:00 PM",
+        day="2023,6,23"
+    ))
+    dates.append(Date(
+        time="6:00 AM",
         day="2023,6,25"
     ))
     dates.append(Date(
-        time="1:00 PM",
-        day="2023,6,28"
+        time="2:00 PM",
+        day="2023,6,25"
+    ))
+    dates.append(Date(
+        time="8:00 PM",
+        day="2023,6,25"
+    ))
+    dates.append(Date(
+        time="8:00 AM",
+        day="2023,6,27"
+    ))
+    dates.append(Date(
+        time="8:00 PM",
+        day="2023,6,27"
+    ))
+    dates.append(Date(
+        time="3:30 PM",
+        day="2023,6,27"
+    ))
+    dates.append(Date(
+        time="9:00 AM",
+        day="2023,6,29"
+    ))
+    dates.append(Date(
+        time="7:15 AM",
+        day="2023,6,29"
+    ))
+    dates.append(Date(
+        time="6:00 PM",
+        day="2023,6,29"
     ))
 
 

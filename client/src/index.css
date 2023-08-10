@@ -64,7 +64,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   gap: 5px;
-  height: 40px;
+  height: 45px;
   align-items: center;
   padding-left: 20px;
 }
@@ -89,7 +89,7 @@ h4 {
   border: none;
   padding: 6px 20px;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 #log-out {
@@ -99,7 +99,7 @@ h4 {
   border: none;
   padding: 6px 16px;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .search-group {
@@ -118,6 +118,7 @@ h4 {
     align-items: center;
     justify-content: center;
     gap: 25px;
+    height: 1000px;
 }
 
 #login-header {
@@ -223,7 +224,7 @@ h4 {
 }
 
 #event-container {
-  height: 1175px;
+  height: 1250px;
   width: 40vw;
   margin-top: 100px;
   background-color: #eaf6f6;
@@ -240,11 +241,11 @@ h4 {
 }
 
 .event-wrap {
-  height: 45rem;
+  height: 60rem;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 #event-card {
@@ -289,21 +290,35 @@ h4 {
   display: flex;
   flex-direction: row;
   background-color: #eaf6f6;
+  gap: 20px;
+  justify-content: center;
+  height: 1000px;
+
 }
 
 #my-activities-container {
   height: 70vh;
-  width: 450px;
+  width: 400px;
   display: flex;
+  min-height: 100%;
 }
+
 
 .my-activities-header {
   font-size: 26px;
+  margin-left: 10px;
 }
 
 #my-activities-list {
   margin-top: 100px;
-  width: 500px;
+  width: 350px;
+  gap: 15px;
+}
+
+.activity-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #activity-card {
@@ -321,21 +336,35 @@ h4 {
 
 #meet-page-container {
   display: flex;
+  height: 60rem;
 }
+
 
 #meet-container {
   margin-top: 75px;
-  height: 800px;
+  height: 600px;
   width: 32vw;
+  gap: 15px;
 }
 
 #users-near-wrap {
   overflow-y: scroll;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 #meet-card {
   border-radius: 20px;
   background-color: #eaf6f6;
+}
+
+.friends-wrap {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 #friends-list {
@@ -364,16 +393,83 @@ img {
   width: 190px;
 }
 
-
-#host-event-container {
-  height: 60vh;
-  width: 50vw;
-  margin-top: 50px;
+.host-event-page {
+  height: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #eaf6f6;
+  justify-content: center;
 }
 
-#host-event-form {
+#host-event-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  background-color: #eaf6f6;
   justify-content: center;
-  margin-top: 10vh;
+}
+
+#host-header {
+  justify-content: center;
+  margin-left: 88px;
+  font-size: 34px;
+  margin-top: 150px;
+}
+
+.host-wrap {
+  gap: 5px;
+  flex-direction: row;
+  background-color: #eaf6f6;
+  justify-content: center;
+}
+
+.host-form {
+  justify-content: center;
+  width: 650px;
+  margin-top: 50px;
+  height: 800px;
+  gap: 15px;
+}
+
+#host-btn {
+  margin-top: 10px;
+}
+
+.profile-page {
+  height: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color:rgb(250, 249, 246);
+  justify-content: center;
+}
+
+#profile-container {
+  height: 800px;
+  width: 80%;
+  flex-direction: row;
+  background-color:rgb(250, 249, 246);
+  justify-content: center;
+}
+
+#profile-wrap {
+  display: flex;
+  flex-direction: row;
+  background-color: #eaf6f6;
+  justify-content: center;
+  width: 700px;
+  margin-top: 200px;
+  margin-left: 175px;
+  border-radius: 16px;
+}
+
+#profile-card-body {
+  gap: 10px;
+}
+
+.profile-btn {
+  background-color: rgb(250, 249, 246);
 }
 
 #address-input {
@@ -386,7 +482,7 @@ img {
 }
 
 input:focus {
-  background-color: rgb(255, 255, 76);
+  background-color: grey;
   outline: none;
   border: 1px solid rgb(0, 0, 0)
 }

@@ -41,15 +41,19 @@ function Profile({currentUser, setCurrentUser, users}){
 
 
     return (
-        <div>
+        <div className="profile-page">
            {currentUser ? <div className="container" id="profile-container">
-                <h2>{currentUser.username}</h2>
-                <h3>First Name: {currentUser.first_name}</h3>
-                <h3>Last Name: {currentUser.last_name}</h3>
-                <h3>Age: {currentUser.age}</h3>
+                <div id="profile-wrap" className="card">
+                  <div id="profile-card-body" className="card-body">
+                <h2 className="card-text">{currentUser.username}</h2>
+                <h3 className="card-text">First Name: {currentUser.first_name}</h3>
+                <h3 className="card-text">Last Name: {currentUser.last_name}</h3>
+                <h3 className="card-text">Age: {currentUser.age}</h3>
                 <input onChange={updateAddressInput} id="address-input" className="form-control" type="text" name="address" placeholder={currentUser.address} required />
-                <button className="btn" onClick={updateAddress}> Update Address</button>
-                <button className="btn" onClick={deleteUser}>Delete Profile</button>
+                <button className="btn btn-dark" onClick={updateAddress}> Update Address</button>
+                <button className="btn btn-dark" onClick={deleteUser}>Delete Profile</button>
+                </div>
+                </div>
 
             </div> : <h1>Please log in!</h1>}
 

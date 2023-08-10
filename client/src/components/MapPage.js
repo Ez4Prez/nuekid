@@ -42,7 +42,36 @@ function MapPage({ locations, events, addToMyActivities, renderEventDateDay }) {
           iconUrl: 'images/bike.png',
           iconSize: [34, 34],
         });
-      
+      case 'Chess':
+        return new Icon({
+          iconUrl: 'images/chess.png',
+          iconSize: [34, 34],
+        });
+      case 'Books':
+        return new Icon({
+          iconUrl: 'images/books.png',
+          iconSize: [34, 34],
+        });
+      case 'Game':
+        return new Icon({
+          iconUrl: 'images/game.png',
+          iconSize: [34, 34],
+        });
+      case 'Home1':
+        return new Icon({
+          iconUrl: 'images/home1.png',
+          iconSize: [34, 34],
+        });
+      case 'Home2':
+        return new Icon({
+          iconUrl: 'images/home2.png',
+          iconSize: [34, 34],
+        });
+      case 'Basketball':
+        return new Icon({
+          iconUrl: 'images/basketball.png',
+          iconSize: [34, 34],
+        });
       default:
         return new Icon({
           iconUrl: 'images/home1.png',
@@ -63,13 +92,13 @@ function MapPage({ locations, events, addToMyActivities, renderEventDateDay }) {
           {events.map(event => (
             <div id="event-card" className="card" key={event.id}>
               <div id="event-card-body" className="card-body">
-                <h2 className="card-title">{event.title}</h2>
+                <h3 className="card-title">{event.title}</h3>
                 {/* Access Correct Location Name by Matching Event ID */}
-                <h3 className="card-text">Where: {event.location.name}</h3>
+                <h3 className="card-text">{event.location.name}</h3>
                 {/* <h3 className="card-text"> {event.name}</h3> */}
-                <h4 className="card-text">When: {renderEventDateDay(event.date.day)} {event.date.time}</h4>
+                <h4 className="card-text">{renderEventDateDay(event.date.day)} @ {event.date.time}</h4>
                 <h4 className="card-text">Capacity: {event.people_needed} people</h4>
-                <h4 className="card-text">Spots left: {event.space_available}</h4>
+                <h4 className="card-text">Space available: {event.space_available}</h4>
                 <div className="card-text">{event.description}</div>
                 <button onClick={() => {
                   addToMyActivities(event)
@@ -97,7 +126,7 @@ function MapPage({ locations, events, addToMyActivities, renderEventDateDay }) {
                 position={marker.geocode}
                 icon={getMarkerIcon(marker.locationType)}
                 eventHandlers={{ click: () => handleMarkerClick(marker) }} >
-                <Popup><h2>{marker.popup}</h2></Popup>
+                <Popup><h4>{marker.popup}</h4></Popup>
               </Marker>
             ))
             }

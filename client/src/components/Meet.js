@@ -36,7 +36,6 @@ function Meet({users, currentUser}) {
         <div id="meet">
 
         <div id="meet-page-container" className="container">
-
             <div class="container" id="meet-container">
                 <h2>Folks near you...</h2>
                 <div id="users-near-wrap">
@@ -55,9 +54,11 @@ function Meet({users, currentUser}) {
                 ))}
                 </div>
             </div>
+    
  
             <div class="container" id="friends-list">
                 <h2>Friends ({friendList.length})</h2>
+                <div className="friends-wrap">
                 {friendList.map(friend => (
                 <div class="card" key={friend.id} id="friend-card">
                  <div class="card-body">
@@ -68,6 +69,7 @@ function Meet({users, currentUser}) {
                  </div>
                 </div>
                 ))}
+                </div>
              </div> 
 
         </div>
