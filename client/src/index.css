@@ -241,7 +241,7 @@ h4 {
 }
 
 .event-wrap {
-  height: 60rem;
+  height: 75rem;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -265,8 +265,13 @@ h4 {
   margin-top: 5px;
 }
 
+.joined-btn {
+  background-color: limegreen;
+  color: white;
+}
+
 #location-container {
-  height: 72vh;
+  height: 110vh;
   width: 45vw;
   margin-top: 25px;
   color: black;
@@ -274,6 +279,7 @@ h4 {
   border: none;
   padding: 6px 16px;
   font-size: 16px;
+  overflow-y: auto;
 }
 
 #location-card {
@@ -434,6 +440,10 @@ img {
 
 #host-btn {
   margin-top: 10px;
+}
+
+.host-event-posted {
+  margin-top: 450px;
 }
 
 .profile-page {

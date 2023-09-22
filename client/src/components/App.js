@@ -182,7 +182,7 @@ function updateFormData(event){
         </Route>
         <Route exact path="/">
           {currentUser ? 
-          <MapPage locations={locations} events={events} addToMyActivities={addToMyActivities} renderEventDateDay={renderEventDateDay}/>
+          <MapPage locations={locations} events={events} activities={activities} addToMyActivities={addToMyActivities} renderEventDateDay={renderEventDateDay}/>
           : 
           <Login attemptedLogin={attemptedLogin} />} 
         </Route>

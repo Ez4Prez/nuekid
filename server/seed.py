@@ -135,11 +135,11 @@ with app.app_context():
         location_type="Game"
     ))
     locations.append(Location(
-        name='RMG Theatre',
-        address='Canarsie Rd, Brooklyn, NY 11236',
-        lat="40.6358446654474",
-        long="-73.89154523184594",
-        img="https://www.rmgtheater.com/wp/wp-content/gallery/rmg-gallery2/12301709_458571074343469_678466979919537916_n.jpg",
+        name='Geek Forest',
+        address='122 Bedford Ave, Brooklyn, NY 11249',
+        lat="40.712203",
+        long="-73.955887",
+        img="https://c8.alamy.com/comp/RBMG5F/geek-forest-358-grand-street-brooklyn-ny-exterior-of-a-science-and-art-focused-afterschool-program-in-the-williamsburg-neighborhood-RBMG5F.jpg",
         location_type="Game"
     ))
     locations.append(Location(
@@ -159,12 +159,12 @@ with app.app_context():
         location_type="Home2"
     ))
     locations.append(Location(
-        name="Joe's Spot",
-        address='22 Troy Ave, Brooklyn, NY 11213',
-        lat="40.67162937035576",
-        long="-73.93608619608038",
-        img="images/home2.png",
-        location_type="Home2"
+        name="SoFive Brooklyn",
+        address='2015 Pitkin Ave, Brooklyn, NY 11207',
+        lat="40.672148",
+        long="-73.898350",
+        img="https://media.bizj.us/view/img/11066486/sofive-rockville*1200xx2016-1134-0-189.jpg",
+        location_type="Soccer"
     ))
     locations.append(Location(
         name="Alicia's Spot",
@@ -190,6 +190,7 @@ with app.app_context():
         img="https://www.nycgovparks.org/photo_gallery/full_size/18800.jpg",
         location_type="Basketball"
     ))
+   
     
 
 
@@ -208,10 +209,9 @@ with app.app_context():
         event_type="Flag Football",
         people_needed= 16,
         space_available= 10,
-        location_id=4,
+        location_id=2,
         date_id=1
     ))
-
     events.append(Event(
         title="Group Bike Ride",
         description="Join us bright and early for a group bike at prospect park.",
@@ -221,34 +221,171 @@ with app.app_context():
         location_id=6,
         date_id=3
     ))
-
     events.append(Event(
-        title="Beginners Softball",
+        title="Harry Potter Book Club",
+        description="Join Brooklyn's premier Harry Potter book and fan club.",
+        event_type="Books",
+        people_needed= 25,
+        space_available= 4,
+        location_id=9,
+        date_id=9
+    ))
+    events.append(Event(
+        title="Pick-up Soccer Game",
         description="Family friendly softball game at Buddy Keaton. All are welcome!",
         event_type="Softball",
-        people_needed= 20,
-        space_available= 11,
+        people_needed= 18,
+        space_available= 7,
         location_id=5,
-        date_id=2
+        date_id=12
     ))
     events.append(Event(
-        title="Competitive Soccer",
+        title="Competitive Touch Football",
         description="Got what it takes? bring your A game",
-        event_type="Soccer",
+        event_type="Football",
         people_needed= 12,
         space_available= 3,
         location_id=3,
         date_id=2
     ))
     events.append(Event(
-        title="Competitive Soccer",
-        description="Got what it takes? bring your A game",
-        event_type="Soccer",
-        people_needed= 12,
+        title="8 Man Bike Race!",
+        description="3 Lap race around prospect park skilled riders only.",
+        event_type="Bicycle",
+        people_needed= 8,
         space_available= 3,
-        location_id=3,
+        location_id=6,
+        date_id=8
+    ))
+    events.append(Event(
+        title="Speed Chess Tournament",
+        description="Speed chess tournament for skilled players only.",
+        event_type="Chess",
+        people_needed= 10,
+        space_available= 2,
+        location_id=11,
         date_id=2
     ))
+    events.append(Event(
+        title="Kids Bike Lessons (ages 4-8)",
+        description="Parents must be present. Get the kiddo's comfortable riding bikes!",
+        event_type="Bicycle",
+        people_needed= 12,
+        space_available= 6,
+        location_id=6,
+        date_id=10
+    ))
+    events.append(Event(
+        title="Archie Comics Fan Club",
+        description="Join our monthly fan club of an all-time classic!",
+        event_type="Books",
+        people_needed= 20,
+        space_available= 9,
+        location_id=9,
+        date_id=5
+    ))
+    events.append(Event(
+        title="Evening Group Ride",
+        description="Easy going cycle session at prospect park",
+        event_type="Bicycle",
+        people_needed= 10,
+        space_available= 7,
+        location_id=6,
+        date_id=3
+    ))
+    events.append(Event(
+        title="A Separate Reality by Carlos Castaneda",
+        description="Kick of the beginning of our humble following of this cult classic about the shaman Dan Juan",
+        event_type="Books",
+        people_needed= 18,
+        space_available= 10,
+        location_id=9,
+        date_id=9
+    ))
+    events.append(Event(
+        title="Chess Hour",
+        description="Friendly competition chess games for all skill levels",
+        event_type="Chess",
+        people_needed= 15,
+        space_available= 6,
+        location_id=11,
+        date_id=5
+    ))
+    events.append(Event(
+        title="PeeWee Football League",
+        description="Parents must be present. Brooklyn's safest youth football program.",
+        event_type="Football",
+        people_needed= 22,
+        space_available= 5,
+        location_id=2,
+        date_id=7
+    ))
+    events.append(Event(
+        title="2 vs 2 Basketball Tournament!",
+        description="Which duo will bring home the prize? All day event!",
+        event_type="Basketball",
+        people_needed= 16,
+        space_available= 5,
+        location_id=21,
+        date_id=5
+    ))
+    events.append(Event(
+        title="12 Player Chess Tournament",
+        description="12 player chess tournaments for anybody who wants to put their skills to the test!",
+        event_type="Chess",
+        people_needed= 12,
+        space_available= 8,
+        location_id=11,
+        date_id=12
+    ))
+    events.append(Event(
+        title="7 v 7 Friendly Football!",
+        description="Low competition and minimum contact football for fun",
+        event_type="Football",
+        people_needed= 14,
+        space_available= 10,
+        location_id=2,
+        date_id=9
+    ))
+    events.append(Event(
+        title="Youth Soccer",
+        description="Kids Soccer league, ages 8-12. Parents must be present.",
+        event_type="Soccer",
+        people_needed= 25,
+        space_available= 8,
+        location_id=19,
+        date_id=4
+    ))
+    events.append(Event(
+        title="Sharks League: 8-vs-8 Full Contact Football",
+        description="Game 2 of the season, open positions still available!",
+        event_type="Football",
+        people_needed= 48,
+        space_available= 12,
+        location_id=2,
+        date_id=10
+    ))
+    events.append(Event(
+        title="Pick-up Basketball Game",
+        description="Local pickup after work",
+        event_type="Basketball",
+        people_needed= 8,
+        space_available= 3,
+        location_id=21,
+        date_id=12
+    ))
+    events.append(Event(
+        title="Pickup Soccer 5 vs 5",
+        description="10 man evening pickup soccer game",
+        event_type="Soccer",
+        people_needed= 10,
+        space_available= 2,
+        location_id=19,
+        date_id=8
+    ))
+
+
+
 
     users = []
 
@@ -256,12 +393,12 @@ with app.app_context():
     hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
 
     users.append(User(
-        username="John112",
+        username="Doug_Dribbles",
         password_hash=hashed_password,
-        first_name="John",
+        first_name="Doug",
         last_name="Barnes",
         address="1573 Bedford Ave, Brooklyn, NY 11225",
-        age= 37
+        age= 32
     ))
 
     password = 'cats123'
@@ -308,15 +445,15 @@ with app.app_context():
         age= 35
     ))
     users.append(User(
-        username="CatDaddy112",
+        username="HaloLover03",
         password_hash="cats123",
         first_name="Will",
         last_name="Spears",
         address="224 Kent Ave, Brooklyn, NY 11214",
-        age= 55
+        age= 43
     ))
     users.append(User(
-        username="Dave-n-co",
+        username="Dave1998",
         password_hash="cats123",
         first_name="David",
         last_name="Chen",
@@ -340,7 +477,7 @@ with app.app_context():
         age= 26
     ))
     users.append(User(
-        username="Pac-man1991",
+        username="Pac-manz",
         password_hash="cats123",
         first_name="Rando",
         last_name="Dave",
@@ -348,7 +485,7 @@ with app.app_context():
         age= 31
     ))
     users.append(User(
-        username="LastGuy118",
+        username="Last_Guy",
         password_hash="cats123",
         first_name="Steve",
         last_name="Last",
@@ -356,7 +493,7 @@ with app.app_context():
         age= 44
     ))
     users.append(User(
-        username="sykee",
+        username="sykee112",
         password_hash="cats123",
         first_name="Wanda",
         last_name="Sykes",
@@ -369,51 +506,51 @@ with app.app_context():
 
     dates.append(Date(
         time="3:30 PM",
-        day="2023,6,23"
+        day="2023,7,23"
     ))
     dates.append(Date(
         time="7:00 AM",
-        day="2023,6,23"
+        day="2023,7,23"
     ))
     dates.append(Date(
         time="7:00 PM",
-        day="2023,6,23"
+        day="2023,7,23"
     ))
     dates.append(Date(
         time="6:00 AM",
-        day="2023,6,25"
+        day="2023,7,25"
     ))
     dates.append(Date(
         time="2:00 PM",
-        day="2023,6,25"
+        day="2023,7,25"
     ))
     dates.append(Date(
         time="8:00 PM",
-        day="2023,6,25"
+        day="2023,7,25"
     ))
     dates.append(Date(
         time="8:00 AM",
-        day="2023,6,27"
+        day="2023,7,27"
     ))
     dates.append(Date(
         time="8:00 PM",
-        day="2023,6,27"
+        day="2023,7,27"
     ))
     dates.append(Date(
         time="3:30 PM",
-        day="2023,6,27"
+        day="2023,7,27"
     ))
     dates.append(Date(
         time="9:00 AM",
-        day="2023,6,29"
+        day="2023,7,29"
     ))
     dates.append(Date(
         time="7:15 AM",
-        day="2023,6,29"
+        day="2023,7,29"
     ))
     dates.append(Date(
         time="6:00 PM",
-        day="2023,6,29"
+        day="2023,7,29"
     ))
 
 

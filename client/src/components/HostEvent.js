@@ -7,7 +7,7 @@ const [formSubmitted, setFormSubmitted] = useState(false)
     return (
         <div className="host-event-page">
         <div class="container" id="host-event-container">
-            {formSubmitted ? <h1 >Your event has been posted!</h1> 
+            {formSubmitted ? <h1 className="host-event-posted">Your event has been posted!</h1> 
             : 
             <div className="host-wrap">
                 <h2 className="navbar-brand" id="host-header">...Host an event on Nue Kid!</h2>

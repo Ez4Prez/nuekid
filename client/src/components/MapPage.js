@@ -6,10 +6,15 @@ import MyActivities from './MyActivities';
 
 
 
-function MapPage({ locations, events, addToMyActivities, renderEventDateDay }) {
+function MapPage({ locations, events, activities, addToMyActivities, renderEventDateDay }) {
 
   const [currentLocation, setCurrentLocation] = useState(null);
-  const [activities, setActivities] = useState([]);
+  // const [activities, setActivities] = useState([]);
+  const [joinedEvent, setJoinedEvent] = useState(false);
+
+ function toggleJoinedEvent(){
+  setJoinedEvent(joinedEvent => !joinedEvent);
+ }
 
   const handleMarkerClick = (location) => {
     setCurrentLocation(location);
@@ -100,10 +105,11 @@ function MapPage({ locations, events, addToMyActivities, renderEventDateDay }) {
                 <h4 className="card-text">Capacity: {event.people_needed} people</h4>
                 <h4 className="card-text">Space available: {event.space_available}</h4>
                 <div className="card-text">{event.description}</div>
-                <button onClick={() => {
-                  addToMyActivities(event)
-                }} className="btn btn-dark" id="event-container-btn" >
-                  + Join
+                <button className={`btn ${activities.some((activity) => activity.id === event.id) ? 'joined-btn' : 'btn-dark'}`}
+                id="event-container-btn" onClick={() => {addToMyActivities(event)}}>
+                 {activities.some((activity) => activity.id === event.id)
+                 ? "Joined" : "+ Join"
+                 }
                 </button>
               </div>
             </div>
@@ -141,7 +147,7 @@ function MapPage({ locations, events, addToMyActivities, renderEventDateDay }) {
               {currentLocation && (
                 <img className="card-img" id="location-card-img" src={currentLocation.img} alt="Location Image" />
               )}
-              <h2>{currentLocation ? currentLocation.popup : "Verrazano Sports Complex"}</h2>
+              <h2>{currentLocation ? currentLocation.popup : "Event Location:"}</h2>
               <p>{currentLocation && currentLocation.address}</p>
               <div>Upcoming:</div>
               {currentLocation && currentLocation.events.map(event => (
