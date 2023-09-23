@@ -366,6 +366,11 @@ h4 {
   background-color: #eaf6f6;
 }
 
+.friend-added-btn {
+  background-color: turquoise;
+  color: white;
+}
+
 .friends-wrap {
   overflow-y: scroll;
   display: flex;
@@ -452,7 +457,7 @@ img {
   display: flex;
   flex-direction: row;
   background-color:rgb(250, 249, 246);
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 #profile-container {
@@ -460,23 +465,32 @@ img {
   width: 80%;
   flex-direction: row;
   background-color:rgb(250, 249, 246);
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 #profile-wrap {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #eaf6f6;
   justify-content: center;
-  width: 700px;
+  width: 550px;
   margin-top: 200px;
-  margin-left: 175px;
-  border-radius: 16px;
+  margin-left: 280px;
+  border-radius: 16px; 
   gap: 5px;
 }
 
 #profile-card-body {
-  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.profile-btn-wrap {
+  display: flex;
+  gap: 7px;
+  margin-top: 5px;
 }
 
 .profile-btn {

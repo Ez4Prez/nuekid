@@ -44,10 +44,14 @@ function Meet({users, currentUser}) {
                         <h3 class="card-text">{user.username}</h3>
                         <h4 class="card-title">Age: {user.age}</h4>
                         <h4 class="card-text">Location: Brooklyn, NY</h4>
-                        <button class="button" id="event-container-btn" onClick={() => {
+                        <button className={`btn ${friendList.some((friend) => friend.id === user.id) ? 'friend-added-btn' : 'btn-dark'}`}
+                            id="event-container-btn" onClick={() => {
+                            if (friendList.some((friend) => friend.id === user.id)) {
+                            } else {
                             handleAddFriend(user);
+                            }
                         }} >
-                            + Add Friend
+                           {friendList.some((friend) => friend.id === user.id) ? "Friends" : "+ Add Friend"} 
                         </button>
                     </div>
                 </div>
