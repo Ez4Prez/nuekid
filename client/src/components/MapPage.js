@@ -108,7 +108,7 @@ function MapPage({ locations, events, activities, addToMyActivities, renderEvent
                 <button className={`btn ${activities.some((activity) => activity.id === event.id) ? 'joined-btn' : 'btn-dark'}`}
                 id="event-container-btn" onClick={() => {addToMyActivities(event)}}>
                  {activities.some((activity) => activity.id === event.id)
-                 ? "Joined" : "+ Join"
+                 ? "Joined ✔️" : "+ Join"
                  }
                 </button>
               </div>

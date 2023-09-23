@@ -51,7 +51,7 @@ function Meet({users, currentUser}) {
                             handleAddFriend(user);
                             }
                         }} >
-                           {friendList.some((friend) => friend.id === user.id) ? "Friends" : "+ Add Friend"} 
+                           {friendList.some((friend) => friend.id === user.id) ? "Friends ✔️" : "+ Add Friend"} 
                         </button>
                     </div>
                 </div>
