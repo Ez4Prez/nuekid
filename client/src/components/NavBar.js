@@ -1,6 +1,6 @@
 import {NavLink} from "react-router-dom"
 
-function NavBar({setCurrentUser}){
+function NavBar({ setCurrentUser, updateSearchText }){
 
     function logOutUser() {
         fetch('/logout', {
@@ -34,6 +34,7 @@ return (
                     type="text"
                     id="search"
                     placeholder="Explore the neighborhood..."
+                    onChange={updateSearchText}
                 
                 />
             </div>

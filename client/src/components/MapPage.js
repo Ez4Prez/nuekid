@@ -97,7 +97,7 @@ function MapPage({ locations, events, activities, addToMyActivities, renderEvent
           {events.map(event => (
             <div id="event-card" className="card" key={event.id}>
               <div id="event-card-body" className="card-body">
-                <h3 className="card-title">{event.title}</h3>
+                <h2 className="card-title">{event.title}</h2>
                 {/* Access Correct Location Name by Matching Event ID */}
                 <h3 className="card-text">{event.location.name}</h3>
                 {/* <h3 className="card-text"> {event.name}</h3> */}

@@ -51,7 +51,7 @@ function Profile({currentUser, setCurrentUser, users}){
                 <h3 className="card-text">Age: {currentUser.age}</h3>
                 <input onChange={updateAddressInput} id="address-input" className="form-control" type="text" name="address" placeholder={currentUser.address} required />
                 <button className="btn btn-dark" onClick={updateAddress}> Update Address</button>
-                <button className="btn btn-dark" onClick={deleteUser}>Delete Profile</button>
+                <button className="btn btn-danger" onClick={deleteUser}>Delete Profile</button>
                 </div>
                 </div>
 

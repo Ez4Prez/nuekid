@@ -472,6 +472,7 @@ img {
   margin-top: 200px;
   margin-left: 175px;
   border-radius: 16px;
+  gap: 5px;
 }
 
 #profile-card-body {

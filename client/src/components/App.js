@@ -19,6 +19,7 @@ const [locations, setLocations] = useState([])
 const [events, setEvents] = useState([])
 const [users, setUsers] = useState([])
 const [currentUser, setCurrentUser] = useState(null)
+const [searchText, setSearchText] = useState("")
 const [formInput, setFormInput] = useState({
   title: "",
   description: "",
@@ -157,13 +158,22 @@ function updateFormData(event){
   else (setFormInput({...formInput, [event.target.name]: event.target.value}))
 }
 
+function updateSearchText(event) {
+  setSearchText(event.target.value)
+}
 
+const filteredEvents = events.filter(event => {
+  if (searchText === "") {
+    return true
+  }
+  return event.title.toLowerCase().includes(searchText.toLowerCase()) || event.event_type.toLowerCase().includes(searchText.toLowerCase())
+})
 
 
 
   return (
     <div className="App">
-      { currentUser ? <NavBar setCurrentUser={setCurrentUser} /> : null}
+      { currentUser ? <NavBar updateSearchText={updateSearchText} setCurrentUser={setCurrentUser} /> : null}
       <Switch>
         <Route path='/profile'>
           <Profile currentUser={currentUser} setCurrentUser={setCurrentUser} users={users}/>
@@ -182,7 +192,7 @@ function updateFormData(event){
         </Route>
         <Route exact path="/">
           {currentUser ? 
-          <MapPage locations={locations} events={events} activities={activities} addToMyActivities={addToMyActivities} renderEventDateDay={renderEventDateDay}/>
+          <MapPage locations={locations} events={filteredEvents} activities={activities} addToMyActivities={addToMyActivities} renderEventDateDay={renderEventDateDay}/>
           : 
           <Login attemptedLogin={attemptedLogin} />} 
         </Route>
