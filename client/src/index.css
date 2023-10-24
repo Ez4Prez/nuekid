@@ -242,7 +242,9 @@ h4 {
 
 .event-wrap {
   height: 75rem;
+  width: 535px;
   overflow-y: scroll;
+  scrollbar-color: green;
   display: flex;
   flex-direction: column;
   gap: 15px;
