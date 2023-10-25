@@ -134,7 +134,7 @@ function MyActivities ({activities, setActivities, renderEventDateDay}){
               events = {activities.map((activity) => {return serveActivityDataToCalendar(activity)})}
               startAccessor="start" 
               endAccessor="end"
-              style={{height: 600, margin: "50px", width: 800}}   
+              style={{height: 600, margin: "100px", width: 800}}   
             />
 
         
