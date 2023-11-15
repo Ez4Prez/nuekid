@@ -83,8 +83,8 @@ class Location(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
     address = db.Column(db.String)
-    lat = db.Column(db.String)
-    long = db.Column(db.Integer)
+    lat = db.Column(db.Float)
+    long = db.Column(db.Float)
     img = db.Column(db.String)
     location_type = db.Column(db.String)
 

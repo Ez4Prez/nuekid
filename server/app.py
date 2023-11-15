@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
+# 'sqlite:///nuekid.db'
+
 
 import ipdb
+import os
 
-from flask import Flask, make_response, jsonify, request, session
+from dotenv import load_dotenv
+load_dotenv()
+
+from flask import Flask, make_response, jsonify, request, session, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_restful import Api, Resource
@@ -11,9 +17,16 @@ from flask_bcrypt import Bcrypt
 
 from models import db, Location, Event, User
 
-app = Flask(__name__)
+app = Flask(
+    __name__,
+    static_url_path='',
+    static_folder='../client/build',
+    template_folder='../client/build'
+    )
+
 app.secret_key = b'Y\xf1Xz\x00\xad|eQ\x80t \xca\x1a\x10K'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///nuekid.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://e_m_r:7UmayFygSc3pWDmmc6cvejmQgvE0GN8C@dpg-cl9vkbdo7jlc73fk5l80-a.ohio-postgres.render.com/ez_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.json.compact = False
 
@@ -23,7 +36,10 @@ migrate = Migrate(app, db)
 db.init_app(app)
 CORS(app)
 
-# CORS(app)
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("index.html")
+
 
 api = Api(app)
 
