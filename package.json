@@ -3,7 +3,7 @@
     "@googlemaps/js-api-loader": "^1.16.2",
     "@react-google-maps/api": "^2.18.1",
     "date-fns": "^2.30.0",
-    "react-big-calendar": "^1.8.1",
+    "react-big-calendar": "^1.8.5",
     "react-datepicker": "^4.16.0"
   }
 }

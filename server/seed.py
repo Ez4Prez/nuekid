@@ -506,51 +506,51 @@ with app.app_context():
 
     dates.append(Date(
         time="3:30 PM",
-        day="2023,7,23"
+        day="2023,10,23"
     ))
     dates.append(Date(
         time="7:00 AM",
-        day="2023,7,23"
+        day="2023,10,23"
     ))
     dates.append(Date(
         time="7:00 PM",
-        day="2023,7,23"
+        day="2023,10,23"
     ))
     dates.append(Date(
         time="6:00 AM",
-        day="2023,7,25"
+        day="2023,10,25"
     ))
     dates.append(Date(
         time="2:00 PM",
-        day="2023,7,25"
+        day="2023,10,25"
     ))
     dates.append(Date(
         time="8:00 PM",
-        day="2023,7,25"
+        day="2023,10,25"
     ))
     dates.append(Date(
         time="8:00 AM",
-        day="2023,7,27"
+        day="2023,10,27"
     ))
     dates.append(Date(
         time="8:00 PM",
-        day="2023,7,27"
+        day="2023,10,27"
     ))
     dates.append(Date(
         time="3:30 PM",
-        day="2023,7,27"
+        day="2023,10,27"
     ))
     dates.append(Date(
         time="9:00 AM",
-        day="2023,7,29"
+        day="2023,10,29"
     ))
     dates.append(Date(
         time="7:15 AM",
-        day="2023,7,29"
+        day="2023,10,29"
     ))
     dates.append(Date(
         time="6:00 PM",
-        day="2023,7,29"
+        day="2023,10,29"
     ))
 
 
