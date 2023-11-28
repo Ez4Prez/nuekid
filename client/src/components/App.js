@@ -6,7 +6,6 @@ import Meet from './Meet'
 import Login from './Login'
 import CreateProfile from './CreateProfile'
 import Profile from './Profile'
-// import {Map, Marker, Popup, TileLayer} from 'react-leaflet'
 
 import {useState, useEffect} from 'react'
 import {Route, Switch} from 'react-router-dom';
