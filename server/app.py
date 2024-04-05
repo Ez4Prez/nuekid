@@ -5,8 +5,8 @@
 import ipdb
 import os
 
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 from flask import Flask, make_response, jsonify, request, session, render_template
 from flask_sqlalchemy import SQLAlchemy
@@ -25,8 +25,8 @@ app = Flask(
     )
 
 app.secret_key = b'Y\xf1Xz\x00\xad|eQ\x80t \xca\x1a\x10K'
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://e_m_r:7UmayFygSc3pWDmmc6cvejmQgvE0GN8C@dpg-cl9vkbdo7jlc73fk5l80-a.ohio-postgres.render.com/ez_db'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://ez:g9aX4FEnqge43BzNll8i4Nto4fmZRHq9@dpg-co7kl2i1hbls73ebssg0-a.ohio-postgres.render.com/nuekid_3n33'
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.json.compact = False
 
