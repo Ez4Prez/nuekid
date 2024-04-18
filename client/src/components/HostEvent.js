@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-function HostEvent({updateFormData, submitItem}){
+function HostEvent({updateFormData, submitEvent}){
 
 const [formSubmitted, setFormSubmitted] = useState(false)
 
@@ -13,7 +13,7 @@ const [formSubmitted, setFormSubmitted] = useState(false)
                 <h2 className="navbar-brand" id="host-header">...Host an event on Nue Kid!</h2>
             <form className="host-form" onSubmit={(event) => {
                 event.preventDefault();
-                submitItem(event)
+                submitEvent(event)
                 setFormSubmitted(formSubmitted => !formSubmitted)
             }} >
 

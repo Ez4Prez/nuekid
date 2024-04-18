@@ -84,23 +84,40 @@ function attemptedLogin(userInfo) {
 
 
 
-
 useEffect(() => {
   fetch("/locations")
-  .then(resp => resp.json())
+  .then(resp => {
+    if (!resp.ok) {
+      throw new Error('Network response was not successful')
+    }
+    return resp.json()
+  })
   .then(locationsData => setLocations(locationsData))
+  .catch(err => {console.error('Error retrieving locations!', err)})
 },[])
 
 useEffect(() => {
   fetch("/events")
-  .then(resp => resp.json())
+  .then(resp => {
+    if (!resp.ok) {
+      throw new Error('Network response was not successful')
+    }
+    return resp.json()
+  })
   .then(eventsData => setEvents(eventsData))
+  .catch(err => {console.error('Error retrieving events!', err)})
 },[])
 
 useEffect(() => {
   fetch("/users")
-  .then(resp => resp.json())
+  .then(resp => {
+    if (!resp.ok) {
+      throw new Error('Network response was not successful')
+    }
+    return resp.json()
+  })
   .then(usersData => setUsers(usersData))
+  .catch(err => {console.error('Error retrieving users!', err)})
 },[])
 
 
@@ -129,16 +146,18 @@ const addToMyActivities = (event) => {
   setActivities((prevActivities) => [...prevActivities, activity]);
 };
 
+
+
 const renderEventDateDay = (eventDateDayString) => {
   const dateDayArray = eventDateDayString.split(",")
   dateDayArray[1] = Number(dateDayArray[1]) + 1
   return [...dateDayArray].reverse().join("-");
 }
 
-function submitItem(event){
+function submitEvent(event){
   event.preventDefault()
   console.log({...formInput, user_id: currentUser.id})
-  fetch("http://127.0.0.1:7000/events",{
+  fetch("/events",{
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -181,7 +200,7 @@ const filteredEvents = events.filter(event => {
           <Meet users={users} currentUser={currentUser} />
         </Route>
         <Route path='/host-event'>
-          <HostEvent submitItem={submitItem} updateFormData={updateFormData} />       
+          <HostEvent submitEvent={submitEvent} updateFormData={updateFormData} />       
         </Route>
         <Route path="/my-activities">
           <MyActivities activities={activities} setActivities={setActivities} addToMyActivities={addToMyActivities} renderEventDateDay={renderEventDateDay}/>
